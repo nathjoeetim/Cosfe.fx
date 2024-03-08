@@ -1,3 +1,5 @@
+"use client";
+
 import styled from "styled-components";
 import Logo from "./logoComponent";
 import Lottie from "lottie-react";

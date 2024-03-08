@@ -1,3 +1,4 @@
+"use client";
 function Logo() {
   return (
     <div className="flex flex-row items-center justify-start gap-0">

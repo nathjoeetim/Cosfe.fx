@@ -1,3 +1,5 @@
+"use client";
+
 import styled from "styled-components";
 import UnderLine from "./underline";
 import { Card } from "./ui/card";

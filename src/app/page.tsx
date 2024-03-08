@@ -25,7 +25,7 @@ export default function Home() {
         </HoverDiv>
       </WhatNew>
       {/*  */}
-      <TopCard className="w-full p-5">
+      <TopCard className="w-full p-5 flex flex-row ">
         <div className="flex flex-col gap-5 flex-1 font-bold text-white ">
           <span className="text-4xl">
             A Better Way To Invest, <br />
