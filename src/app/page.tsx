@@ -1,113 +1,171 @@
+"use client";
+import CustomText from "@/components/customText";
 import Image from "next/image";
+import { MdOutlineKeyboardArrowRight } from "react-icons/md";
+import styled from "styled-components";
+import traderHande from "@/assests/manhand.png";
+import { Input } from "@/components/ui/input";
+import { FaSearchDollar } from "react-icons/fa";
+import { Card } from "@/components/ui/card";
+import HowWeWork from "@/components/howWeWork";
+import OurFlexibleInVestment from "@/components/investmentFlexibility";
+import InvestmentPlan from "@/components/ourPlan";
+import Testimonies from "@/components/testimony";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
+    <div className="flex flex-col mx-auto w-[97%] p-1 bg-transparent">
+      <WhatNew className="flex flex-row items-center justify-start gap-1">
+        <span className="rounded-full bg-indigo-600/10 px-3 py-1 text-sm font-semibold leading-6 text-white ring-1 ring-inset ring-yellow w-[110px] flex flex-row items-center justify-center ">
+          What&apos;s New
+        </span>
+        <HoverDiv className=" gap-3 rounded-md font-medium text-sm">
+          S3 files included in all our plans{" "}
+          <MdOutlineKeyboardArrowRight size={20} color="gold" />
+        </HoverDiv>
+      </WhatNew>
+      {/*  */}
+      <TopCard className="w-full p-5">
+        <div className="flex flex-col gap-5 flex-1 font-bold text-white ">
+          <span className="text-4xl">
+            A Better Way To Invest, <br />
+            <CustomText> Crypto Currency and Forex </CustomText>
+          </span>
+          <span className="font-normal text-sm">
+            At Cosfe .FX, we&apos;re on a mission to modernize the financial
+            industry. We believe that the industry runs on currency, and
+            we&apos;re here to give you the finicial independence you deserve.
+          </span>
+          <span className="font-normal text-lg">
+            Invest and earn with Up to <CustomText> 2.5% - 5.0% </CustomText>
+            daily profit
+          </span>
+          <div className="flex flex-col w-[250px] relative">
+            <Input
+              type="text"
+              placeholder="Search here..."
+              className="text-slate-600 font-semibold"
             />
-          </a>
+            <AnimatedBackgroundDiv className=" flex-row absolute top-1/2 right-[-10px] items-center justify-center transform h-full flex -translate-y-1/2 cursor-pointer bg-gold z-10 p-5 text-base text-slate-700">
+              <FaSearchDollar size={18} className="" />
+            </AnimatedBackgroundDiv>
+          </div>
         </div>
-      </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-full sm:before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full sm:after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
         <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
+          src={traderHande.src}
+          height={250}
+          width={250}
+          alt="phone "
+          className="flex-[0.7] w-full h-full traderHand"
         />
-      </div>
-
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
+      </TopCard>
+      <Activities className="flex flex-row items-center justify-between mt-5">
+        <div className="flex flex-row items-center gap-5 mt-3">
+          <div className="text-white font-bold flex flex-row items-center w-[120px]">
+            <h4 className="font-bold text-5xl text-orange-300">4</h4>
+            <span className="flex flex-row font-medium text-xs">
+              Years of experience
             </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
+          </div>
+          <div className="text-white font-bold flex flex-row items-center w-[170px]">
+            <h4 className="font-bold text-5xl text-orange-300">70</h4>
+            <span className="flex flex-row font-medium text-xs">
+              Active Trading Account
             </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50 text-balance`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+          </div>
+        </div>
+        <CustomCustomerCard className="flex flex-row items-center gap-2 p-2 rounded-full text-xl font-bold mt-2">
+          5K+ satisfied customers
+        </CustomCustomerCard>
+      </Activities>
+      <HowWeWork />
+      <OurFlexibleInVestment />
+      <InvestmentPlan />
+      <Testimonies />
+    </div>
   );
 }
+
+const TopCard = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px;
+  margin-top: 2rem;
+
+  @media screen and (max-width: 973px) {
+    flex-direction: column;
+
+    & div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      & span {
+        width: 80%;
+        text-align: center;
+      }
+    }
+
+    & .traderHand {
+      width: 80%;
+      height: 100px;
+    }
+  }
+`;
+
+const Activities = styled.div`
+  @media screen and (max-width: 612px) {
+    flex-direction: column-reverse;
+    gap: 10px;
+  }
+`;
+
+const CustomCustomerCard = styled(Card)`
+  @media screen and (max-width: 973px) {
+    flex-direction: column;
+    text-align: center;
+    font-size: medium;
+  }
+`;
+
+const AnimatedBackgroundDiv = styled.div`
+  background: transparent;
+`;
+
+const HoverDiv = styled.div`
+  color: white;
+  font-weight: 600;
+  display: flex;
+  flex-direction: row;
+  gap: 2px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  transition: background-position 0.3s ease;
+  background-color: transparent;
+
+  cursor: pointer;
+
+  @media screen and (max-width: 479px) {
+    font-size: small;
+    text-align: center;
+    padding: 0.5px;
+  }
+  &:hover {
+    background-color: #6366f1;
+    background-position: -100% 0;
+    border: 1px solid grey;
+    transition: 1s ease-in-out;
+  }
+`;
+
+const WhatNew = styled.div`
+  display: flex;
+  align-items: center;
+
+  @media screen and (max-width: 479px) {
+    justify-content: space-between;
+  }
+`;
