@@ -12,7 +12,7 @@ import OurFlexibleInVestment from "@/components/investmentFlexibility";
 import InvestmentPlan from "@/components/ourPlan";
 import Testimonies from "@/components/testimony";
 
-export default function Home() {
+function Home() {
   return (
     <div className="flex flex-col mx-auto w-[97%] p-1 bg-transparent">
       <WhatNew className="flex flex-row items-center justify-start gap-1">
@@ -40,7 +40,7 @@ export default function Home() {
             Invest and earn with Up to <CustomText> 2.5% - 5.0% </CustomText>
             daily profit
           </span>
-          <div className="flex flex-col w-[250px] relative">
+          <div className="flex flex-col w-[250px] relative search-input">
             <Input
               type="text"
               placeholder="Search here..."
@@ -86,6 +86,8 @@ export default function Home() {
   );
 }
 
+export default Home;
+
 const TopCard = styled.div`
   display: flex;
   flex-direction: row;
@@ -96,7 +98,7 @@ const TopCard = styled.div`
   @media screen and (max-width: 973px) {
     flex-direction: column;
 
-    & div {
+    &.search-input {
       display: flex;
       flex-direction: column;
       align-items: center;

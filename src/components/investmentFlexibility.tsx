@@ -4,14 +4,24 @@ import Aos from "aos";
 import CustomText from "./customText";
 import { InvestmentFlexibility } from "./data";
 import growth from "@/assests/svg/growth.json";
-import Lottie from "lottie-react";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+
+let Lottie: any;
+if (typeof window !== "undefined") {
+  Lottie = require("lottie-react").default;
+}
 
 function OurFlexibleInVestment() {
   useEffect(() => {
     Aos.init({ duration: 2000 });
   }, []);
+  const [lottieLoaded, setLottieLoaded] = useState(false);
 
+  useEffect(() => {
+    if (Lottie) {
+      setLottieLoaded(true);
+    }
+  }, []);
   return (
     <Container className="flex flex-row items-center justify-between gap-3 p-10 mb-4">
       <div className="flex flex-col items-start justify-start flex-[1.5] gap-5">
@@ -57,9 +67,11 @@ function OurFlexibleInVestment() {
             );
           })}
         </div>
-        <div className="w-[190px] h-[200px] motionImage ">
-          <Lottie animationData={growth} loop={true} />
-        </div>
+        {lottieLoaded && (
+          <div className="w-[190px] h-[200px] motionImage ">
+            <Lottie animationData={growth} loop={true} />
+          </div>
+        )}
       </SecondContainer>
     </Container>
   );
