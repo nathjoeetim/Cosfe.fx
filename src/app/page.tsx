@@ -1,4 +1,5 @@
 "use client";
+import React from "react";
 import CustomText from "@/components/customText";
 import Image from "next/image";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
@@ -27,7 +28,7 @@ function Home() {
       {/*  */}
       <TopCard className="w-full p-5 flex flex-row ">
         <div className="flex flex-col gap-5 flex-1 font-bold text-white ">
-          <span className="text-4xl">
+          <span className="text-4xl font-mono ">
             A Better Way To Invest, <br />
             <CustomText> Crypto Currency and Forex </CustomText>
           </span>
@@ -67,8 +68,8 @@ function Home() {
               Years of experience
             </span>
           </div>
-          <div className="text-white font-bold flex flex-row items-center w-[170px]">
-            <h4 className="font-bold text-5xl text-orange-300">70</h4>
+          <div className="text-white font-bold gap-1 flex flex-row items-center w-[140px]">
+            <h4 className="font-bold text-5xl text-orange-300">7</h4>
             <span className="flex flex-row font-medium text-xs">
               Active Trading Account
             </span>

@@ -67,7 +67,7 @@ export default function RootLayout({
       </Head>
       <body
         className={cn(
-          "min-h-screen bg-background font-sans antialiased",
+          "min-h-screen bg-background font-serif antialiased",
           fontSans.variable
         )}
       >
@@ -76,7 +76,7 @@ export default function RootLayout({
             <div className="relative flex flex-col items-center justify-center max-w-[1440px] bg-zinc-950 dark:bg-white mx-auto w-full ">
               <TradingView />
               <div
-                className={`flex flex-row items-center justify-between w-full p-3 gap-7 ${
+                className={`flex flex-row items-center justify-between w-full p-3 gap-7 font-mono ${
                   isTopNavFixed
                     ? "fixed top-0 w-full r-0 l-0 bg-transparent z-50"
                     : ""

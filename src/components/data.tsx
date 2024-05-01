@@ -15,7 +15,7 @@ export type PlansAlises = {
 export const InvestmentFlexibility: FlexibilityAlises[] = [
   {
     id: 1,
-    text: "Invest with as low as $150",
+    text: "Invest with as low as $50",
   },
   {
     id: 2,
@@ -86,7 +86,7 @@ export const AllPlans: PlansAlises[] = [
       },
       {
         tittle: "Investment limits",
-        item: "$400 - $5000 ",
+        item: "$300 - $500 ",
       },
     ],
   },
@@ -115,7 +115,7 @@ export const AllPlans: PlansAlises[] = [
       },
       {
         tittle: "Investment limits",
-        item: "$200 - $5000 ",
+        item: "$200 - $400",
       },
     ],
   },
@@ -144,7 +144,7 @@ export const AllPlans: PlansAlises[] = [
       },
       {
         tittle: "Investment limits",
-        item: "$200 - $500 ",
+        item: "$50 - $300 ",
       },
     ],
   },

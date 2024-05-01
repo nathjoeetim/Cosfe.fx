@@ -28,9 +28,9 @@ function OurFlexibleInVestment() {
         <h4 className="text-white text-4xl font-bold text-center">
           Your Flexibility in Investment
         </h4>
-        <p className="text-base text-slate-500 dark:text-slate-400 text-justify">
+        <p className=" gap-3 text-base text-slate-500 dark:text-slate-400 text-justify">
           Welcome to Your Flexibility in Investment,{" "}
-          <CustomText>financial goals meet adaptable investment</CustomText>
+          <CustomText>financial goals meet adaptable investment </CustomText>
           where your strategies tailored to your needs. We understand that every
           investor is unique, with varying objectives, risk tolerances, and
           timelines. That&apos;s why we offer a range of flexible investment
