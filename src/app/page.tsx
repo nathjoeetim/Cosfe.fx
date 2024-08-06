@@ -30,7 +30,7 @@ function Home() {
         <div className="flex flex-col gap-5 flex-1 font-bold text-white ">
           <span className="text-4xl font-mono ">
             A Better Way To Invest, <br />
-            <CustomText> Crypto Currency and Forex </CustomText>
+            <CustomText> in the Forex market </CustomText>
           </span>
           <span className="font-normal text-sm">
             At Cosfe .FX, we&apos;re on a mission to modernize the financial

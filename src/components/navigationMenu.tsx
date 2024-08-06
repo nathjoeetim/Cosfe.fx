@@ -75,7 +75,7 @@ export function NavigationMenuComponent() {
                     width={24}
                     alt="cur"
                   />
-                  Forex and Crypto Currencies
+                  Forex Exchange
                 </div>
               </ListItem>
               <ListItem
