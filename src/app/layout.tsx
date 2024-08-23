@@ -20,6 +20,7 @@ import { SideBar } from "@/components/sideBar";
 import Head from "next/head";
 import Fotter from "@/components/fotter";
 import { HashLoader } from "react-spinners";
+import ScaleSpinner from "./loading";
 
 const fontSans = FontSans({
   subsets: ["latin"],
@@ -133,7 +134,7 @@ export default function RootLayout({
             </div>
           </div>
         ) : (
-          <HashLoader />
+          <ScaleSpinner />
         )}
       </body>
     </html>

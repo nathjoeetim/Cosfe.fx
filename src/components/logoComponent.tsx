@@ -1,11 +1,26 @@
 "use client";
+import Image from "next/image";
+import { useRouter } from "next/navigation";
+import logoImage from "@/assests/logo.jpg";
 function Logo() {
+  const router = useRouter();
+
+  const navigateToPage = () => {
+    router.push("/");
+  };
+
   return (
-    <div className="flex flex-row items-center justify-start gap-0">
-      <h4 className="flex flex-row items-center text-white font-bold text-lg w-full">
-        Cosfe
-        <span className="flex items-center text-slate-400 font-bold">.FX</span>
-      </h4>
+    <div
+      className="flex flex-row items-center justify-start gap-0"
+      onClick={navigateToPage}
+    >
+      <Image
+        src={logoImage.src}
+        alt="company_logo"
+        width={50}
+        height={50}
+        className="cursor-pointer"
+      />
     </div>
   );
 }

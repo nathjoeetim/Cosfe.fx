@@ -8,7 +8,7 @@ import CustomText from "./customText";
 
 function Fotter() {
   return (
-    <div className="bg-slate-700 w-full flex flex-col items-start justify-start p-2 gap-5">
+    <div className="bg-slate-700 w-full flex flex-col items-start justify-start p-2 gap-5 mt-6">
       <GridContainer className="w-full items-start justify-start gap-4">
         <Logo />
         <div className="flex flex-col gap-4 w-full mb-5">
@@ -49,7 +49,10 @@ function Fotter() {
         </div>
       </GridContainer>
       <div className="text-slate-400 font-medium text-xs w-full flex felx-row items-center justify-center gap-2 underline">
-        UI by <CustomText> @Nathjoeetim</CustomText> All Right Reserved
+        UI by{" "}
+        <a href="https://nathjoeetim12.vercel.app/">
+          <CustomText> @Nathjoeetim</CustomText> All Right Reserved
+        </a>
       </div>
     </div>
   );

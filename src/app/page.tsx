@@ -82,7 +82,7 @@ function Home() {
       <HowWeWork />
       <OurFlexibleInVestment />
       <InvestmentPlan />
-      <Testimonies />
+      {/* <Testimonies /> */}
     </div>
   );
 }
@@ -145,7 +145,7 @@ const HoverDiv = styled.div`
   gap: 2px;
   align-items: center;
   justify-content: space-between;
-  padding: 10px;
+  padding: 5px;
   transition: background-position 0.3s ease;
   background-color: transparent;
 

@@ -34,7 +34,7 @@ function HowWeWork() {
     <div className="flex flex-col gap-3 py-10 justify-center item-center W-[95%] mx-2">
       <HeaderWrapper className="gap-2 ">
         <h5 className="flex flex-row text-white text-lg font-semibold gap-2">
-          How <Logo /> Works
+          How CASNEL Works
         </h5>
         <UnderLine />
       </HeaderWrapper>

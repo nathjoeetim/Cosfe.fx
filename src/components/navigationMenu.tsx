@@ -62,12 +62,16 @@ export function NavigationMenuComponent() {
                       Stocks
                     </span>
                     <span className="text-sm leading-tight text-muted-foreground">
-                      All US ExchangeS + Darkpools
+                      All US Exchanges + Darkpools
                     </span>
                   </a>
                 </NavigationMenuLink>
               </li>
-              <ListItem href="/docs" title="Currencies" className="text-white">
+              <ListItem
+                href="/fotrex_market"
+                title="Currencies"
+                className="text-white"
+              >
                 <div className="flex flex-row items-center text-white gap-1">
                   <Image
                     src="https://cdn.sanity.io/images/dhlwe0i3/production/d38a3d98e25ece11b4f497aefb8bf6e16bca0bea-32x32.svg?w=64&q=75&fm=webp"
