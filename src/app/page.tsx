@@ -20,10 +20,10 @@ function Home() {
         <span className="rounded-full bg-indigo-600/10 px-3 py-1 text-sm font-semibold leading-6 text-white ring-1 ring-inset ring-yellow w-[110px] flex flex-row items-center justify-center ">
           What&apos;s New
         </span>
-        <HoverDiv className=" gap-3 rounded-md font-medium text-sm">
+        {/* <HoverDiv className=" gap-3 rounded-md font-medium text-sm">
           S3 files included in all our plans{" "}
           <MdOutlineKeyboardArrowRight size={20} color="gold" />
-        </HoverDiv>
+        </HoverDiv> */}
       </WhatNew>
       {/*  */}
       <TopCard className="w-full p-5 flex flex-row ">
@@ -33,14 +33,14 @@ function Home() {
             <CustomText> in the Forex market </CustomText>
           </span>
           <span className="font-normal text-sm">
-            At Cosfe .FX, we&apos;re on a mission to modernize the financial
+            At Casnel, we&apos;re on a mission to modernize the financial
             industry. We believe that the industry runs on currency, and
             we&apos;re here to give you the finicial independence you deserve.
           </span>
-          <span className="font-normal text-lg">
+          {/* <span className="font-normal text-lg">
             Invest and earn with Up to <CustomText> 2.5% - 5.0% </CustomText>
             daily profit
-          </span>
+          </span> */}
           <div className="flex flex-col w-[250px] relative search-input">
             <Input
               type="text"

@@ -17,8 +17,15 @@ import { CgMenuMotion } from "react-icons/cg";
 import styled from "styled-components";
 import Logo from "./logoComponent";
 import CustomText from "./customText";
+import { useRouter } from "next/navigation";
 
 export function SideBar() {
+  const router = useRouter();
+
+  function onNavigateFunction(route: string) {
+    router.push(route);
+  }
+
   return (
     <SideBarItem className="grid grid-cols-2 gap-2">
       <Sheet>
@@ -35,33 +42,37 @@ export function SideBar() {
             <SheetDescription className="w-full flex flex-col justify-center items-center">
               <span className="text-lg mb-3 w-[90%] text-center">
                 A Better Way To Invest, <br />
-                <CustomText> Crypto Currency and Forex </CustomText>
+                <CustomText> in Forex </CustomText>
               </span>
             </SheetDescription>
           </SheetHeader>
           <div className="flex flex-col items-center justify-center  gap-4 py-4">
-            <div className="flex w-full">
-              <Input
-                id="email"
-                value=""
-                type="email"
-                className="col-span-3 text-slate-600 font-semibold"
-                placeholder="PedroDuarte@gmail.com"
-              />
+            <div className="flex w-[80%] items-center justify-center">
+              <SheetClose
+                className=" flex flex-col items-center justify-center w-full p-5 bg-slate-900 cursor-pointer"
+                onClick={() => onNavigateFunction("/")}
+              >
+                Home
+              </SheetClose>
             </div>
-            <div className="flex w-full text-white font-semibold text-center">
-              <p>
-                By Submitting Your Mail You&apos;ve Accepted Our Newsletter
-                <CustomText>
-                  <h5 className="underline">Terms and Condition</h5>
-                </CustomText>
-              </p>
+            <div className="flex w-[80%] items-center justify-center">
+              <SheetClose
+                className=" flex flex-col items-center justify-center w-full p-5 bg-slate-900 cursor-pointer"
+                onClick={() => onNavigateFunction("/fotrex_market")}
+              >
+                Forex Exchange
+              </SheetClose>
+            </div>
+            <div className="flex w-[80%] items-center justify-center">
+              <SheetClose className=" flex flex-col items-center justify-center w-full p-5 bg-slate-900 cursor-pointer">
+                Platform
+              </SheetClose>
             </div>
           </div>
           <SheetFooter className="flex flex-row items-center justify-center">
-            <SheetClose asChild>
+            {/* <SheetClose asChild>
               <Button type="submit">Subscribe to Newsletter</Button>
-            </SheetClose>
+            </SheetClose> */}
           </SheetFooter>
         </SheetContent>
       </Sheet>

@@ -48,16 +48,22 @@ function IntroToForexMarket() {
           week, allowing traders to react quickly to global events and market
           movements.
         </div>
-        <div className="hidden lg:flex lg:flex-row w-full gap-5 justify-between items-center">
-          <Image src={fx1.src} height={400} width={400} alt="image" />
-          <span className="text-lg text-center italic">
+        <div className="lg:flex-row w-full gap-5 justify-center lg:justify-between items-center ">
+          <Image
+            src={fx1.src}
+            height={400}
+            width={400}
+            alt="image"
+            className="hidden lg:flex "
+          />
+          <span className="text-lg text-center italic  item-center jsutify-center w-full">
             <span className="text-5xl text-yellow-300">&quot; </span>
             Risk comes from not knowing what you&apos;re doing.{" "}
             <span className="text-5xl text-yellow-300"> &quot;</span>
             <br /> — Warren Buffett
           </span>
         </div>
-        <span>
+        <span className="text-justify">
           In Forex trading, participants buy one currency while simultaneously
           selling another, making profits from the fluctuations in exchange
           rates. This market attracts everyone from large financial institutions

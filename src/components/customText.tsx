@@ -12,5 +12,5 @@ function CustomText({ children }: CustomTextProps) {
 export default CustomText;
 
 const CustomTextComponent = styled.span`
-  color: gold;
+  color: #8acadf;
 `;
