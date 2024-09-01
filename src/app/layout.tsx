@@ -101,7 +101,7 @@ export default function RootLayout({
                           {" "}
                           <RiCustomerService2Fill
                             size={20}
-                            color="yellow"
+                            color="lightblue"
                             className="cursor-pointer"
                           />
                         </TooltipTrigger>
@@ -117,7 +117,7 @@ export default function RootLayout({
                           {" "}
                           <BsQuestionSquare
                             size={20}
-                            color="yellow"
+                            color="lightblue"
                             className="cursor-pointer"
                           />
                         </TooltipTrigger>

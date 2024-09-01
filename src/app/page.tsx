@@ -33,7 +33,7 @@ function Home() {
             <CustomText> in the Forex market </CustomText>
           </span>
           <span className="font-normal text-sm">
-            At Casnel, we&apos;re on a mission to modernize the financial
+            At Casnal, we&apos;re on a mission to modernize the financial
             industry. We believe that the industry runs on currency, and
             we&apos;re here to give you the finicial independence you deserve.
           </span>
