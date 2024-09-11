@@ -31,7 +31,7 @@ function HowWeWork() {
   }, []);
 
   return (
-    <div className="flex flex-col gap-3 py-10 justify-center item-center W-[95%] mx-2">
+    <div className="flex flex-col gap-3 py-10 justify-center item-center W-[95%] mx-2 mt-16">
       <HeaderWrapper className="gap-2 ">
         <h5 className="flex flex-row text-white text-lg font-semibold gap-2">
           How Casnal Works

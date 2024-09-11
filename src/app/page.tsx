@@ -17,22 +17,22 @@ function Home() {
   return (
     <div className="flex flex-col mx-auto w-[97%] p-1 bg-transparent">
       <WhatNew className="flex flex-row items-center justify-start gap-1">
-        <span className="rounded-full bg-indigo-600/10 px-3 py-1 text-sm font-semibold leading-6 text-white ring-1 ring-inset ring-yellow w-[110px] flex flex-row items-center justify-center ">
+        {/* <span className="rounded-full bg-indigo-600/10 px-3 py-1 text-sm font-semibold leading-6 text-white ring-1 ring-inset ring-yellow w-[110px] flex flex-row items-center justify-center ">
           What&apos;s New
-        </span>
+        </span> */}
         {/* <HoverDiv className=" gap-3 rounded-md font-medium text-sm">
           S3 files included in all our plans{" "}
           <MdOutlineKeyboardArrowRight size={20} color="gold" />
         </HoverDiv> */}
       </WhatNew>
       {/*  */}
-      <TopCard className="w-full p-5 flex flex-row ">
-        <div className="flex flex-col gap-5 flex-1 font-bold text-white ">
-          <span className="text-4xl font-mono ">
-            A Better Way To Invest, <br />
+      <TopCard className="w-full px-5 flex flex-row ">
+        <div className="flex flex-col gap-5 flex-1 font-bold text-[#8acadf] ">
+          <span className="text-5xl font-mono ">
+            Hedging you to stability, <br />
             <CustomText> in the Forex market </CustomText>
           </span>
-          <span className="font-normal text-sm">
+          <span className="font-normal text-sm text-justify max-w-[500px] text-white">
             At Casnal, we&apos;re on a mission to modernize the financial
             industry. We believe that the industry runs on currency, and
             we&apos;re here to give you the finicial independence you deserve.
@@ -41,7 +41,7 @@ function Home() {
             Invest and earn with Up to <CustomText> 2.5% - 5.0% </CustomText>
             daily profit
           </span> */}
-          <div className="flex flex-col w-[250px] relative search-input">
+          {/* <div className="flex flex-col w-[250px] relative search-input">
             <Input
               type="text"
               placeholder="Search here..."
@@ -50,7 +50,7 @@ function Home() {
             <AnimatedBackgroundDiv className=" flex-row absolute top-1/2 right-[-10px] items-center justify-center transform h-full flex -translate-y-1/2 cursor-pointer bg-gold z-10 p-5 text-base text-slate-700">
               <FaSearchDollar size={18} className="" />
             </AnimatedBackgroundDiv>
-          </div>
+          </div> */}
         </div>
         <Image
           src={traderHande.src}

@@ -77,7 +77,7 @@ function IntroToForexMarket() {
           <span className="text-5xl text-yellow-300"> &quot;</span>
           <br /> — Unknown
         </span>
-        <div className="flex flex-col gap-5 w-full">
+        <div className="flex flex-col gap-5 w-full mt-11">
           <h3 className="font-serif text-2xl font-bold">
             what to know more ? contact us
           </h3>
@@ -85,7 +85,7 @@ function IntroToForexMarket() {
             {/* icons */}
             <FaTelegram
               size={40}
-              color="blue"
+              color="white"
               className={`cursor-pointer ${
                 telegramHovered ? "opacity-100" : "opacity-50"
               }`}
@@ -97,7 +97,7 @@ function IntroToForexMarket() {
             />
             <FaWhatsapp
               size={40}
-              color="blue"
+              color="white"
               className={`cursor-pointer ${
                 whatsappIsHovered ? "opacity-100" : "opacity-50"
               }`}
@@ -109,7 +109,7 @@ function IntroToForexMarket() {
             />
             <FaXTwitter
               size={40}
-              color="blue"
+              color="white"
               className={`cursor-pointer ${
                 twitterHovered ? "opacity-100" : "opacity-50"
               }`}

@@ -41,7 +41,7 @@ export function SideBar() {
             </SheetTitle>
             <SheetDescription className="w-full flex flex-col justify-center items-center">
               <span className="text-lg mb-3 w-[90%] text-center">
-                A Better Way To Invest, <br />
+                Hedging you to stability, <br />
                 <CustomText> in Forex </CustomText>
               </span>
             </SheetDescription>
